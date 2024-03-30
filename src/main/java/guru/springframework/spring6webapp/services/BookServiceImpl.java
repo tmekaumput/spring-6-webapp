@@ -2,12 +2,16 @@ package guru.springframework.spring6webapp.services;
 
 import guru.springframework.spring6webapp.domain.Book;
 import guru.springframework.spring6webapp.repositories.BookRepository;
+import org.springframework.stereotype.Service;
 
 
 /**
 * @Author tmekaumput
 * @Date 30/3/24 5:51 pm
-*/public class BookServiceImpl implements BookService {
+*/
+
+@Service
+public class BookServiceImpl implements BookService {
 
     private final BookRepository bookRepository;
 
